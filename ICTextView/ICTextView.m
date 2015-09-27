@@ -106,7 +106,7 @@ static BOOL highlightingSupported;
         highlightingSupported = [self conformsToProtocol:@protocol(UITextInput)];
 }
 
-#pragma Custom Menu - Hide Share button iOS 9
+#pragma Custom Menu - Hide Share and Define buttons from iOS 9 and previous
 
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
     
