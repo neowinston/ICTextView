@@ -106,6 +106,18 @@ static BOOL highlightingSupported;
         highlightingSupported = [self conformsToProtocol:@protocol(UITextInput)];
 }
 
+#pragma Custom Menu - Hide Share button iOS 9
+
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
+    
+    if (action == @selector(copy:))
+    {
+        return YES;
+    }
+    
+    return NO;
+}
+
 #pragma mark - FIX SCROLLING BUGS
 - (NSUInteger)characterIndexForPoint:(CGPoint)point
 {
