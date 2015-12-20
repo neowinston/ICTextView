@@ -118,19 +118,6 @@ static BOOL highlightingSupported;
     return NO;
 }
 
-#pragma Custom Menu - Hide Share and Define buttons from iOS 9 and previous
-
-- (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
-    
-    if (action == @selector(copy:))
-    {
-        return YES;
-    }
-    
-    return NO;
-    
-}
-
 #pragma mark - FIX SCROLLING BUGS
 - (NSUInteger)characterIndexForPoint:(CGPoint)point
 {
