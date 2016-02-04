@@ -112,7 +112,7 @@ static BOOL highlightingSupported;
     
     if (action == @selector(copy:))
     {
-        return YES;
+        return NO;
     }
     
     return NO;
