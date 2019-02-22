@@ -106,10 +106,11 @@ static BOOL highlightingSupported;
         highlightingSupported = [self conformsToProtocol:@protocol(UITextInput)];
 }
 
+//Causes sync of ALL UITextViews
 //SYNCHRONIZE TWO UITEXTVIEWS (RIGHT AND LEFT COLUMNS)
--(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
-    return YES;
-}
+//-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+//    return YES;
+//}
 
 #pragma Custom Menu - Hide Share and Define buttons from iOS 9 and previous
 
